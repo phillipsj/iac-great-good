@@ -1,58 +1,134 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+	<title>iac</title>
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/monokai.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/league.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>
-					<h1>Reveal.js</h1>
-					<h3>The HTML Presentation Framework</h3>
-					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> and <a href="https://github.com/hakimel/reveal.js/graphs/contributors">contributors</a></small>
-					</p>
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/monokai.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h3>Learn You an</h3>
+				<h2>Infrastructure as Code</h2>
+				<h3>for a Great Good!​</h3>
+				<p>
+					<small><a href="https://phillipsj.net">Jamie Phillips</a></small>
+					<br />
+					<small>Web: ​<a href="https://phillipsj.net">https://phillipsj.net</a></small>
+					<br />
+					<small>Twitter: ​<a href="https://twitter.com/phillipsj73">@phillipsj73</a></small>
+					<br />
+					<small>GitHub: <a href="https://github.com/phillipsj">phillipsj</a></small>
+				</p>
+			</section>
+			<section>
+				<h2>Operations?</h2>
+			</section>
+			<section>
+				<h2>Development?</h2>
+			</section>
+			<section>
+				<h2>Context</h2>
+			</section>
+			<section>
+				<h2>J Shaped Curve</h2>
+			</section>
+			<section>
+				<h2>What is infrastructure as code?</h2>
+			</section>
+			<section>
+				<h2>Why infrastructure as code?​</h2>
+			</section>
+			<section>
+				<h2>Repeatable</h2>
+			</section>
+			<section>
+				<h2>Documented</h2>
+			</section>
+			<section>
+				<h2>Auditable</h2>
+			</section>
+			<section>
+				<h2>Configuration Drift</h2>
+			</section>
+			<section>
+				<h2>Version Control</h2>
+			</section>
+			<section>
+				<h2>The Tool Spectrum</h2>
+			</section>
+			<section>
+				<h2>Tools in the middle</h2>
+				<h3>Two types:</h3>
+				<h3>Imperative</h3>
+				<h3>Declaritive</h3>
+			</section>
+			<section>
+				<h2>Imperative Tools</h2>
+				List goes here
+			</section>
+			<section>
+				<h2>Declaritive Tools</h2>
+				List goes here
+			</section>
+			<section>
+				<h2>Tools I like</h2>
+			</section>
+			<section>
+				<img class="stretch" src="pictures/Terraform_PrimaryLogo_FullColor.png"/>
+			</section>
+			<section>
+					<img class="stretch" src="pictures/Packer_PrimaryLogo_FullColor.png"/>
 				</section>
-				<section>Slide 2</section>
-			</div>
+			<section data-background-image="pictures/question-mark-2492009_1920.jpg">
+				<h2>Questions</h2>
+			</section>
+			<section>
+				<h2>Reading Material</h2>
+				The Phoenix Project
+				The DevOps Handbook
+				Terraform: Up and Running
+				Infrastructure as Code
+			</section>
 		</div>
+	</div>
 
-		<script src="js/reveal.js"></script>
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true },
-					// Zoom in and out with Alt+click
-					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					// Speaker notes
-					{ src: 'plugin/notes/notes.js', async: true }
-				]
-			});
-		</script>
-	</body>
+	<script src="js/reveal.js"></script>
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			dependencies: [
+				{ src: 'plugin/markdown/marked.js' },
+				{ src: 'plugin/markdown/markdown.js' },
+				{ src: 'plugin/notes/notes.js', async: true },
+				{ src: 'plugin/highlight/highlight.js', async: true },
+				// Zoom in and out with Alt+click
+				{ src: 'plugin/zoom-js/zoom.js', async: true }
+			]
+		});
+	</script>
+</body>
+
 </html>
