@@ -129,7 +129,7 @@
 				</code></pre>
 			</section>
 			<section>
-					<pre><code class="hljs" data-trim data-line-numbers="4-7">						
+				<pre><code class="hljs" data-trim data-line-numbers="4-7">						
 						provider "azurerm" {
 						}
 						
@@ -138,7 +138,7 @@
 						  location = "West US"
 						}
 					</code></pre>
-				</section>
+			</section>
 			<section>
 				<img class="stretch" src="pictures/Packer_PrimaryLogo_FullColor.png" />
 			</section>
@@ -151,6 +151,63 @@
 					<li class="fragment fade-in">Builders</li>
 					<li class="fragment fade-in">Provisioners</li>
 				</ui>
+			</section>
+			<section>
+				<pre><code class="hljs" data-trim data-line-numbers="2-6">
+				  "builders": [
+				    {
+				      "type": "amazon-ebs"
+				    }
+				  ],
+				  "provisioners": [
+				    {
+				      "type": "shell",
+					  "inline":[
+					    "ls -al /home/ubuntu",
+					    "cat /home/ubuntu/welcome.txt"
+					  ]
+				    }
+				  ]
+				</code></pre>
+			</section>
+			<section>
+				<pre><code class="hljs" data-trim data-line-numbers="7-15">	
+				  "builders": [
+				    {
+				  	  "type": "amazon-ebs"
+					}
+				  ],
+				  "provisioners": [
+				    {
+				      "type": "shell",
+					  "inline":[
+					    "ls -al /home/ubuntu",
+					    "cat /home/ubuntu/welcome.txt"
+					  ]
+					}
+				  ]
+				</code></pre>
+			</section>
+			<section>
+				<pre><code class="hljs" data-trim data-line-numbers="6-8">		
+				  "builders": [
+				    {
+					  "type": "amazon-ebs"
+					},
+					{
+					  "type" "docker"
+					}
+				  ],
+				  "provisioners": [
+				    {
+					  "type": "shell",
+					  "inline":[
+					    "ls -al /home/ubuntu",
+						"cat /home/ubuntu/welcome.txt"
+					  ]
+				    }
+				  ]
+				</code></pre>
 			</section>
 			<section data-background-image="pictures/question-mark-2492009_1920.jpg">
 				<h2>Questions</h2>
