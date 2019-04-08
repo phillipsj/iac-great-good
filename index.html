@@ -108,6 +108,9 @@
 				<img class="stretch" src="pictures/Terraform_PrimaryLogo_FullColor.png" />
 			</section>
 			<section>
+				<h2>Why use Terraform</h2>
+			</section>
+			<section>
 				<h2>Structure of Terraform</h2>
 				<ui>
 					<li class="fragment fade-in">Providers</li>
@@ -115,7 +118,32 @@
 				</ui>
 			</section>
 			<section>
+				<pre><code class="hljs" data-trim data-line-numbers="1-2">						
+					provider "azurerm" {
+					}
+					
+					resource "azurerm_resource_group" "main" {
+					  name     = "production"
+					  location = "West US"
+					}
+				</code></pre>
+			</section>
+			<section>
+					<pre><code class="hljs" data-trim data-line-numbers="4-7">						
+						provider "azurerm" {
+						}
+						
+						resource "azurerm_resource_group" "main" {
+						  name     = "production"
+						  location = "West US"
+						}
+					</code></pre>
+				</section>
+			<section>
 				<img class="stretch" src="pictures/Packer_PrimaryLogo_FullColor.png" />
+			</section>
+			<section>
+				<h2>Why use Packer</h2>
 			</section>
 			<section>
 				<h2>Structure of Packer</h2>
