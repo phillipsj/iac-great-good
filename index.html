@@ -140,6 +140,14 @@
 					</code></pre>
 			</section>
 			<section>
+				<h2>Terraform tool commands</h2>
+				<ui>
+					<li class="fragment fade-in">init</li>
+					<li class="fragment fade-in">plan</li>
+					<li class="fragment fade-in">apply</li>
+				</ui>
+			</section>
+			<section>
 				<img class="stretch" src="pictures/Packer_PrimaryLogo_FullColor.png" />
 			</section>
 			<section>
@@ -153,7 +161,7 @@
 				</ui>
 			</section>
 			<section>
-				<pre><code class="hljs" data-trim data-line-numbers="2-6">
+				<pre><code class="hljs" data-trim data-line-numbers="1-5">
 				  "builders": [
 				    {
 				      "type": "amazon-ebs"
@@ -162,49 +170,49 @@
 				  "provisioners": [
 				    {
 				      "type": "shell",
-					  "inline":[
-					    "ls -al /home/ubuntu",
-					    "cat /home/ubuntu/welcome.txt"
-					  ]
+					    "inline":[
+					      "ls -al /home/ubuntu",
+					      "cat /home/ubuntu/welcome.txt"
+					    ]
 				    }
 				  ]
 				</code></pre>
 			</section>
 			<section>
-				<pre><code class="hljs" data-trim data-line-numbers="7-15">	
+				<pre><code class="hljs" data-trim data-line-numbers="6-14">	
 				  "builders": [
 				    {
 				  	  "type": "amazon-ebs"
-					}
+					  }
 				  ],
 				  "provisioners": [
 				    {
 				      "type": "shell",
-					  "inline":[
-					    "ls -al /home/ubuntu",
-					    "cat /home/ubuntu/welcome.txt"
-					  ]
-					}
+					    "inline":[
+					      "ls -al /home/ubuntu",
+					      "cat /home/ubuntu/welcome.txt"
+					    ]
+					  }
 				  ]
 				</code></pre>
 			</section>
 			<section>
-				<pre><code class="hljs" data-trim data-line-numbers="6-8">		
+				<pre><code class="hljs" data-trim data-line-numbers="5-7">		
 				  "builders": [
 				    {
-					  "type": "amazon-ebs"
-					},
-					{
-					  "type" "docker"
-					}
+					    "type": "amazon-ebs"
+					  },
+					  {
+					    "type" "docker"
+					  }
 				  ],
 				  "provisioners": [
 				    {
-					  "type": "shell",
-					  "inline":[
-					    "ls -al /home/ubuntu",
-						"cat /home/ubuntu/welcome.txt"
-					  ]
+					    "type": "shell",
+					    "inline":[
+					      "ls -al /home/ubuntu",
+						    "cat /home/ubuntu/welcome.txt"
+					    ]
 				    }
 				  ]
 				</code></pre>
